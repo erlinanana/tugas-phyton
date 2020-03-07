@@ -1,0 +1,60 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "total pengeluaran\n",
+      "Masukkan berapa item: 3\n",
+      "Masukkan jumlah pengeluaran : 25000\n",
+      "add note : makan\n",
+      "Masukkan jumlah pengeluaran : 40000\n",
+      "add note : laundry\n",
+      "Masukkan jumlah pengeluaran : 5000\n",
+      "add note : print\n",
+      "Hasil nilai total adalah : 70000.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"total pengeluaran\")\n",
+    "array = []\n",
+    "total = 0\n",
+    "\n",
+    "n = int(input(\"Masukkan berapa item: \"))\n",
+    "for x in range(n):\n",
+    "    harga = float(input(\"Masukkan jumlah pengeluaran : \".format(x+1)))\n",
+    "    keterangan=str(input(\"add note : \"))\n",
+    "    array.append(harga)\n",
+    "\n",
+    "print(\"Hasil nilai total adalah : {}\".format(sum(array)))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
